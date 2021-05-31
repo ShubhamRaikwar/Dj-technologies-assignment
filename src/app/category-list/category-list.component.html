@@ -1,0 +1,7 @@
+<div class="card mb-3" style="width: 18rem;" *ngFor="let category of categoryData" >
+    <img class="card-img-top" [src]="category.maincategoryImage" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{category.maincategory}}</h5>
+      <a [routerLink]="['details/',category.id]" class="btn btn-primary">Details</a>
+    </div>
+  </div>
